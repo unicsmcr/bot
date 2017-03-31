@@ -11,6 +11,24 @@ if (!APP_SECRET) {
     process.exit(1);
 }
 
+function createResponse(text, quick_replies) {
+    let response = {
+        text: text
+    }
+
+    if (quick_replies) {
+        response.quick_replies = quick_replies.map(function(reply) {
+            return {
+                'content_type': 'text',
+                'title': reply[0],
+                'payload': reply[1]
+            };
+        });
+    }
+
+    return response;
+}
+
 /**
  * Verifies that the callback came from Facebook. Read more at
  * https://developers.facebook.com/docs/graph-api/webhooks#setup.
@@ -37,5 +55,6 @@ function verifyRequestSignature(req, res, buf) {
 }
 
 module.exports = {
+    createResponse: createResponse,
     verifyRequestSignature: verifyRequestSignature
 };

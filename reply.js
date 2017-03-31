@@ -1,5 +1,6 @@
 const
     config = require('config'),
+    helpers = require('helpers'),
     request = require('request');
 
 const PAGE_ACCESS_TOKEN = process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
@@ -18,30 +19,41 @@ if (!PAGE_ACCESS_TOKEN) {
  */
 function handleMessageEvent(event) {
     let senderId = event.sender.id;
-    let payload = event.quick_reply ? event.quick_reply.payload : null;
-    sendQuickReply(senderId, payload);
+    let message = event.quick_reply ? event.quick_reply.payload : null;
+    sendQuickReply(senderId, message);
 }
 
-function sendQuickReply(recipientID, payload) {
+function sendQuickReply(recipientID, message) {
+    message.trim();
+    message = message.toLowerCase();
+
+    let response;
+
+    if (['hello', 'hi', 'hey', 'hyia', 'hei', 'oy', 'greetings', 'how do you do', "m'lady",
+        'for the horde'].includes(message)) {
+        response = helpers.createResponse('Hello! Nice to meet you. :-)');
+    } else if (["what's hacksoc", "what is hacksoc", "whats hacksoc", "who are you", "what are you",
+        "what do you do", "why hacksoc"]) {
+        response = helpers.createResponse(
+            "We're a student-led tech society that's based in Manchester. We'd be very happy if " +
+            "you dropped by at our events! :-)",
+            [['Any upcoming events?', 'any upcoming events?'],
+            ["Who's behind HackSoc?", "who's behind hacksoc?"],
+            ['Can I join you?', 'can i join you?']]);
+    } else {
+        response = helpers.createResponse(
+            'Hey there! How may I help you?',
+            [["What's HackSoc?", "what's hacksoc?"],
+            ['Any upcoming events?', 'any upcoming events?'],
+            ["Who's behind HackSoc?", "who's behind hacksoc?"],
+            ['Can I join you?', 'can i join you?']]);
+    }
+
     let messageData = {
         recipient: {
             id: recipientID
         },
-        message: {
-            text: 'Hello!',
-            quick_replies: [
-                {
-                    'content_type': 'text',
-                    'title': 'Hi',
-                    'payload': 'HI'
-                },
-                {
-                    'content_type': 'text',
-                    'title': 'Hello',
-                    'payload': 'HELLO'
-                }
-            ]
-        }
+        message: response
     };
 
     callSendAPI(messageData);
