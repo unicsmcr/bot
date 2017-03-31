@@ -9,15 +9,6 @@ if (!PAGE_ACCESS_TOKEN) {
     process.exit(1);
 }
 
-const SERVER_URL = process.env.HACKSOC_BOT_SERVER_URL
-    ? process.env.HACKSOC_BOT_SERVER_URL
-    : config.get('serverURL');
-
-if (!SERVER_URL) {
-    console.error('Missing config value for server URL.');
-    process.exit(1);
-}
-
 /**
  * This event is called when a message is sent to the bot. The 'message' object format can vary
  * depending on the kind of message that was received. Read more at
