@@ -6,11 +6,19 @@ const
     request = require('request');
 
 var app = express();
-app.set('port', process.env.PORT || 5000);
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 
 // Setup config values before running the code. Can be done by modifying either config/default.json
 // or your operating system's environment variables.
+
+const PORT = process.env.PORT
+    ? process.env.PORT
+    : config.get('port');
+
+if (!PORT) {
+    console.error('Missing config value for port.');
+    process.exit(1);
+}
 
 const APP_SECRET = process.env.HACKSOC_BOT_APP_SECRET
     ? process.env.HACKSOC_BOT_APP_SECRET
@@ -170,12 +178,12 @@ function sendQuickReply(recipientID, payload) {
                 {
                     'content_type': 'text',
                     'title': 'Hi',
-                    "payload": "HI"
+                    'payload': 'HI'
                 },
                 {
                     'content_type': 'text',
                     'title': 'Hello',
-                    "payload": "HELLO"
+                    'payload': 'HELLO'
                 }
             ]
         }
@@ -207,7 +215,7 @@ function callSendAPI(messageData) {
     });
 }
 
-app.listen(app.get('port'), function() {
+app.listen(PORT, function() {
     console.log('HackSoc bot is running on port %d.', app.get('port'));
 });
 
