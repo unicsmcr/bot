@@ -80,8 +80,6 @@ app.post('/webhook', function(req, res) {
                     receivedMessage(event);
                 } else if (event.delivery) {
                     receivedDeliveryConfirmation(event);
-                } else if (event.read) {
-                    receivedMessageRead(event);
                 } else {
                     console.log('Webhook received unknown messaging event:', event);
                 }
@@ -149,24 +147,6 @@ function receivedMessage(event) {
     sendQuickReply(senderID, payload);
 }
 
-/**
- * This event is sent to confirm the delivery of a message. Read more about these fields at
- * https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-delivered.
- */
-function receivedDeliveryConfirmation(event) {
-    var delivery = event.delivery;
-    var messageIDs = delivery.mids;
-    var watermark = delivery.watermark;
-
-    if (messageIDs) {
-        messageIDs.forEach(function(messageID) {
-            console.log('Received delivery confirmation for message ID %d.', messageID);
-        });
-    }
-
-    console.log('All messages before %d were delivered.', watermark);
-}
-
 function sendQuickReply(recipientID, payload) {
     var messageData = {
         recipient: {
@@ -218,5 +198,3 @@ function callSendAPI(messageData) {
 app.listen(PORT, function() {
     console.log('HackSoc bot is running on port %d.', app.get('port'));
 });
-
-module.exports = app;
