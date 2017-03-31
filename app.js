@@ -78,8 +78,6 @@ app.post('/webhook', function(req, res) {
             pageEntry.messaging.forEach(function(event) {
                 if (event.message) {
                     receivedMessage(event);
-                } else if (event.delivery) {
-                    receivedDeliveryConfirmation(event);
                 } else {
                     console.log('Webhook received unknown messaging event:', event);
                 }
@@ -131,12 +129,6 @@ function receivedMessage(event) {
     var messageId = message.mid;
     var appId = message.app_id;
     var quickReply = message.quick_reply;
-
-    if (message.is_echo) {
-        console.log('Received echo for message %s and app %d with metadata "%s".',
-            messageId, appId, message.metadata);
-        return;
-    }
 
     if (!message.quick_reply) {
         console.log(
