@@ -24,8 +24,7 @@ function handleMessageEvent(event) {
 }
 
 function sendQuickReply(recipientID, message) {
-    message.trim();
-    message = message.toLowerCase();
+    message = helpers.normalizeMessage(message);
 
     let response;
 

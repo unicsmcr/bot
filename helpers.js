@@ -29,6 +29,17 @@ function createResponse(text, quick_replies) {
     return response;
 }
 
+function normalizeMessage(message) {
+    if (!message) {
+        return message;
+    }
+
+    message.trim();
+    message = message.toLowerCase();
+    
+    return message;
+}
+
 /**
  * Verifies that the callback came from Facebook. Read more at
  * https://developers.facebook.com/docs/graph-api/webhooks#setup.
@@ -56,5 +67,6 @@ function verifyRequestSignature(req, res, buf) {
 
 module.exports = {
     createResponse: createResponse,
+    normalizeMessage: normalizeMessage,
     verifyRequestSignature: verifyRequestSignature
 };
