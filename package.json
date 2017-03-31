@@ -1,0 +1,22 @@
+{
+  "name": "hacksocbot",
+  "version": "0.1",
+  "contributors": [
+    {
+      "name": "Andrei Muntean",
+      "email": "andrei.muntean.dev@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacksoc-manchester/bot"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "config": "*",
+    "express": "*",
+    "request": "*"
+  },
+  "private": true,
+  "license": "MIT"
+}
