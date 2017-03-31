@@ -19,9 +19,10 @@ function verifyRequestSignature(req, res, buf) {
     let signature = req.headers['x-hub-signature'];
 
     if (!signature || signature.indexOf('=') === -1) {
+        res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }
-    
+
     let elements = signature.split('=');
     let signatureHash = elements[1];
     let expectedHash = crypto
@@ -30,6 +31,7 @@ function verifyRequestSignature(req, res, buf) {
         .digest('hex');
 
     if (signatureHash != expectedHash) {
+        res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }
 }
