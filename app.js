@@ -6,7 +6,7 @@ const
     request = require('request');
 
 var app = express();
-app.set('port', process.env.HTTP_PLATFORM_PORT || 5000);
+app.set('port', process.env.PORT || 5000);
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 
 // Setup config values before running the code. Can be done by modifying either config/default.json
