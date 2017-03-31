@@ -62,5 +62,5 @@ function callSendAPI(messageData) {
 }
 
 module.exports = {
-    handleMessage: handleMessage
+    handleMessageEvent: handleMessageEvent
 };
