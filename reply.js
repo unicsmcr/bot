@@ -1,4 +1,6 @@
-const config = require('config');
+const
+    config = require('config'),
+    request = require('request');
 
 const PAGE_ACCESS_TOKEN = process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
     ? process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
@@ -14,9 +16,9 @@ if (!PAGE_ACCESS_TOKEN) {
  * depending on the kind of message that was received. Read more at
  * https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-received.
  */
-function handleMessage(event) {
+function handleMessageEvent(event) {
     let senderId = event.sender.id;
-    let payload = message.quick_reply ? message.quick_reply.payload : null;
+    let payload = event.quick_reply ? event.quick_reply.payload : null;
     sendQuickReply(senderId, payload);
 }
 
