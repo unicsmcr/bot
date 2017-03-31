@@ -1,6 +1,6 @@
 const
     config = require('config'),
-    helpers = require('helpers'),
+    helpers = require('./helpers'),
     request = require('request');
 
 const PAGE_ACCESS_TOKEN = process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
