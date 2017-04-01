@@ -35,6 +35,8 @@ function normalizeMessage(message) {
     }
 
     message.trim();
+    message = message.replace('?', '');
+    message = message.replace("'", '');
     message = message.toLowerCase();
     
     return message;

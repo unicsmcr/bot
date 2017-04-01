@@ -19,8 +19,9 @@ if (!PAGE_ACCESS_TOKEN) {
  */
 function handleMessageEvent(event) {
     let senderId = event.sender.id;
-    let message = event.quick_reply ? event.quick_reply.payload : event.text;
-    sendQuickReply(senderId, message);
+    let message = event.message;
+    let textMessage = message.quick_reply ? message.quick_reply.payload : message.text;
+    sendQuickReply(senderId, textMessage);
 }
 
 function sendQuickReply(recipientID, message) {
@@ -28,11 +29,11 @@ function sendQuickReply(recipientID, message) {
 
     let response;
 
-    if (['hello', 'hi', 'hey', 'hyia', 'hei', 'oy', 'greetings', 'how do you do', "m'lady",
+    if (['hello', 'hi', 'hey', 'hyia', 'hei', 'oy', 'greetings', 'how do you do', "mlady",
         'for the horde'].includes(message)) {
         response = helpers.createResponse('Hello! Nice to meet you. :-)');
-    } else if (["what's hacksoc", "what is hacksoc", "whats hacksoc", "who are you", "what are you",
-        "what do you do", "why hacksoc"].includes(message)) {
+    } else if (["what is hacksoc", "whats hacksoc", "who are you", "what are you", "what do you do",
+        "why hacksoc"].includes(message)) {
         response = helpers.createResponse(
             "We're a student-led tech society that's based in Manchester. We'd be very happy if " +
             "you dropped by at our events! :-)",
