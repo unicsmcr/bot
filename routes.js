@@ -1,11 +1,16 @@
 const
     config = require('./config'),
     debug = require('./debug'),
+    privacyPolicy = require('./privacy-policy.json'),
     reply = require('./reply');
 
 function setupRoutes(app) {
     app.get('/debug', function(req, res) {
         res.json(debug.info);
+    });
+
+    app.get('/privacy', function(req, res) {
+        res.send(privacyPolicy.text);
     });
 
     app.get('/webhook', function(req, res) {
