@@ -1,6 +1,7 @@
 const
     config = require('./config'),
-    crypto = require('crypto');
+    crypto = require('crypto'),
+    debug = require('./debug');
 
 function parseResponse(response) {
     // Randomly choose a response text from the text array.
@@ -49,6 +50,7 @@ function verifyRequestSignature(req, res, buf) {
     let signature = req.headers['x-hub-signature'];
 
     if (!signature || signature.indexOf('=') === -1) {
+        debug.info.errorCount++;
         res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }
@@ -56,11 +58,12 @@ function verifyRequestSignature(req, res, buf) {
     let elements = signature.split('=');
     let signatureHash = elements[1];
     let expectedHash = crypto
-        .createHmac('sha1', APP_SECRET)
+        .createHmac('sha1', config.appSecret)
         .update(buf)
         .digest('hex');
 
     if (signatureHash != expectedHash) {
+        debug.info.errorCount++;
         res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }

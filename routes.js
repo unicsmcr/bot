@@ -1,16 +1,11 @@
 const
     config = require('./config'),
-    package = require('./package.json'),
+    debug = require('./debug'),
     reply = require('./reply');
-
-const debugInfo = {
-    version: package.version,
-    startTime: new Date().toISOString()
-};
 
 function setupRoutes(app) {
     app.get('/debug', function(req, res) {
-        res.json(debugInfo);
+        res.json(debug.info);
     });
 
     app.get('/webhook', function(req, res) {
@@ -18,6 +13,7 @@ function setupRoutes(app) {
             console.log('Webhook validated.');
             res.status(200).send(req.query['hub.challenge']);
         } else {
+            debug.info.errorCount++;
             console.error('Failed validation. Make sure the validation tokens match.');
             res.sendStatus(403);
         }  
@@ -27,6 +23,7 @@ function setupRoutes(app) {
         let data = req.body;
 
         if (data.object != 'page') {
+            debug.info.errorCount++;
             res.sendStatus(400);
             return;
         }
@@ -37,6 +34,7 @@ function setupRoutes(app) {
                 if (event.message) {
                     reply.handleMessageEvent(event);
                 } else {
+                    debug.info.errorCount++;
                     console.log('Webhook received unknown messaging event:', event);
                 }
             });

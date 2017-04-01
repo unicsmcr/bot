@@ -1,5 +1,6 @@
 const
     config = require('./config'),
+    debug = require('./debug'),
     dialog = require('./dialog'),
     helpers = require('./helpers'),
     request = require('request');
@@ -50,9 +51,9 @@ function callSendAPI(messageData) {
         qs: { access_token: config.pageAccessToken },
         method: 'POST',
         json: messageData
-
     }, function(error, response, body) {
         if (error || response.statusCode != 200) {
+            debug.info.errorCount++;
             console.error('Failed calling the send API:', response.statusCode, response.statusMessage, body.error);
         }
     });
