@@ -52,6 +52,14 @@ module.exports = {
             }
         },
         {
+            'messages': ['whats a hackathon', 'what is a hackathon', 'what are hackathons', 'hackathons', 'why is it called a hackathon', 'why are they called hackathons', 'why is it called hackathon', 'why is it named hackathon', 'why are they named hackathons', 'define hackathons', 'define hackathon'],
+            'response': {
+                'text': [
+                    "A hackathon is best described as an \"invention marathon\". Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don't have to be a programmer and you certainly don't have to be majoring in Computer Science.\u000A\u000A(P.S. I've taken this definition from https://mlh.io/faq :D)",
+                ]
+            }
+        },
+        {
             'messages': ['how were you made', 'are you open source', 'are you opensource', 'can i see your code', 'are you on github', 'who made you', 'were you born', 'where do you come from', 'how old are you', 'where were you born', 'who created you', 'how old are you', 'whats your age', 'what is your age'],
             'response': {
                 'text': [
@@ -125,12 +133,110 @@ module.exports = {
             }
         },
         {
-            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'dev team', 'pr team', 'graphics team', 'organizers'],
+            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'anyone else', 'any teams', 'teams', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'dev team', 'pr team', 'graphics team', 'organizers'],
             'response': {
                 'text': [
                     "We have a development team, event team, hackathon team, graphics team and even a PR team!\u000A\u000AWhile most of our members are computer scientists, many of us study electrical engineering, mathematics, economy, neuroscience and even business!"
                 ],
                 'replies': [
+                    'Dev team',
+                    'Event team',
+                    'Graphics team',
+                    'Hackathon team',
+                    'PR team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos in the dev team', 'who is in the dev team', 'tell me about the dev team', 'dev team', 'tell me about dev team', 'what does the dev team do'],
+            'response': {
+                'text': [
+                    "The dev team creates applications for the society. This includes our website, Hackathon-related websites and even Facebook bots like myself!\u000A\u000AThe current members of the dev team are Andrei Belcin, Aayush Chadha, Raul Ignatus and the team officer is Andrei Muntean."
+                ],
+                'replies': [
+                    'Event team',
+                    'Graphics team',
+                    'Hackathon team',
+                    'PR team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos in the pr team', 'who is in the pr team', 'tell me about the pr team', 'pr team', 'tell me about pr team', 'what does the pr team do'],
+            'response': {
+                'text': [
+                    "The PR team manages our Twitter page (https://twitter.com/hacksocmcr) and our Facebook pages.\u000A\u000AThe current members of the PR team are Catalina Maria Vlad and Maria Revenco (Maria's also the team officer!)."
+                ],
+                'replies': [
+                    'Dev team',
+                    'Event team',
+                    'Hackathon team',
+                    'Graphics team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos in the event team', 'who is in the event team', 'tell me about the event team', 'event team', 'tell me about event team', 'what does the event team do'],
+            'response': {
+                'text': [
+                    "The event team frequently organizes tech events, including workshops and monthly talks given by industry experts.\u000A\u000AOur current event directors are Miruna Pislar and Robert Ihnatisin."
+                ],
+                'replies': [
+                    'Dev team',
+                    'Hackathon team',
+                    'Graphics team',
+                    'PR team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos in the hackathon team', 'who is in the hackathon team', 'tell me about the hackathon team', 'hackathon team', 'tell me about hackathon team', 'what does the hackathon team do', 'hackathon organizers', 'hackathon directors', 'who organizes hackathons', 'people in charge of hackathons'],
+            'response': {
+                'text': [
+                    "The hackathon team organizes our seasonal hackathons, including GreatUniHack, StudentHack and even CS50!\u000A\u000AOur hackathon directors are Cornelia Secelean, Igor Wodiany, Mihai Bujanca, Preslav Venkov and Raul Ignatus."
+                ],
+                'replies': [
+                    'Dev team',
+                    'Event team',
+                    'Graphics team',
+                    'PR team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos in the graphics team', 'who is in the graphics team', 'tell me about the graphics team', 'graphics team', 'tell me about graphics team', 'what does the graphics team do', 'whos in the design team', 'who is in the design team', 'tell me about the design team', 'design team', 'tell me about design team', 'what does the design team do'],
+            'response': {
+                'text': [
+                    "The graphics team designs posters, logos and miscellaneous digital assets for HackSoc!\u000A\u000AThe current members of the graphics team are Alexandra Misca, Bogdan Facaianu and Martina Catizone (who's also the team officer!)."
+                ],
+                'replies': [
+                    'Dev team',
+                    'Event team',
+                    'Hackathon team',
+                    'PR team',
+                    "Who's president?",
+                    'I want to join you'
+                ]
+            }
+        },
+        {
+            'messages': ['whos the president of hacksoc', 'who is the president of hacksoc', 'hacksoc president', 'hacksoc leader', 'who leads hacksoc'],
+            'response': {
+                'text': [
+                    'The president of HackSoc is Cristian Bodnar, a Computer Science student at The University of Manchester. :)'
+                ],
+                'replies': [
+                    'Any teams?',
                     'I want to join you'
                 ]
             }
@@ -142,13 +248,13 @@ module.exports = {
                     "Awesome! Please join our Facebook group (https://www.facebook.com/groups/HackSocManc/) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
                 ],
                 'replies': [
-                    'I just want to see events',
+                    'I just want to visit',
                     'Know any jokes?'
                 ]
             }
         },
         {
-            'messages': ['actually i just want to attend events', 'i just want to go to events', 'i just want to attend events', 'i dont want to help', 'can i come to events', 'can i come to your events', 'can i come to hacksoc events', 'do i need to be in hacksoc', 'do i need to be in hacksoc to go to events', 'do i need to be in hacksoc to go to your events', 'do i have to be in hacksoc', 'do i have to be in hacksoc to attend events', 'do i have to be a member to attend events', 'do i have to be a member'],
+            'messages': ['actually i just want to attend events', 'i just want to visit', 'i just want to go to events', 'i just want to attend events', 'i dont want to help', 'can i come to events', 'can i come to your events', 'can i come to hacksoc events', 'do i need to be in hacksoc', 'do i need to be in hacksoc to go to events', 'do i need to be in hacksoc to go to your events', 'do i have to be in hacksoc', 'do i have to be in hacksoc to attend events', 'do i have to be a member to attend events', 'do i have to be a member'],
             'response': {
                 'text': [
                     "Our events are open to *everyone! You don't have to be part of HackSoc to come, but we'd be very happy if you joined our Facebook group (https://www.facebook.com/groups/HackSocManc/)!\u000A\u000A* Most HackSoc events require you to be a student. Feel free to ask a HackSoc member if you're not sure!"
