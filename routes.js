@@ -1,8 +1,18 @@
 const
     config = require('./config'),
+    package = require('./package.json'),
     reply = require('./reply');
 
+const debugInfo = {
+    version: package.version,
+    startTime: new Date().toISOString()
+};
+
 function setupRoutes(app) {
+    app.get('/debug', function(req, res) {
+        res.json(debugInfo);
+    });
+
     app.get('/webhook', function(req, res) {
         if (req.query['hub.mode'] === 'subscribe' && req.query['hub.verify_token'] === config.validationToken) {
             console.log('Webhook validated.');
