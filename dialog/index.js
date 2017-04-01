@@ -20,7 +20,7 @@ module.exports = {
                 'replies': [
                     "What's HackSoc?",
                     'Any upcoming events?',
-                    'Do you know any jokes?'
+                    'Tell me a joke!'
                 ]
             }
         },
@@ -80,7 +80,7 @@ module.exports = {
                     "I'm implementing a quadratic algorithm for the traveling salesman problem."
                 ],
                 'replies': [
-                    "Okay, but what's HackSoc doing?",
+                    "I meant the society",
                     "Woah, that's cool!"
                 ]
             }
@@ -94,7 +94,7 @@ module.exports = {
                     'I share your enthusiasm! :D'
                 ],
                 'replies': [
-                    "I mean what's HackSoc doing?",
+                    "What's HackSoc doing?",
                     "Woah, that's cool!"
                 ]
             }
@@ -107,43 +107,43 @@ module.exports = {
                 ],
                 'replies': [
                     'Any upcoming events?',
-                    "Who's behind HackSoc?",
-                    'I want to join HackSoc'
+                    "Who's in HackSoc?",
+                    'Can I join you?'
                 ]
             }
         },
         {
-            'messages': ['okay but whats hacksoc doing', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'upcoming events', 'events', 'any events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
+            'messages': ['okay but whats hacksoc doing', 'whats hacksoc doing', 'what is hacksoc doing', 'i meant the society', 'i mean the society', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'upcoming events', 'events', 'any events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
             'response': {
                 'text': [
                     "We're currently working on more events for you to enjoy. Please check back in the near future! :-)"
                 ],
                 'replies': [
-                    "Who's behind HackSoc?",
-                    'I want to join HackSoc'
+                    "Who's in HackSoc?",
+                    'Can I join HackSoc?'
                 ]
             }
         },
         {
-            'messages': ['whos behind hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'dev team', 'pr team', 'graphics team', 'organizers'],
+            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'dev team', 'pr team', 'graphics team', 'organizers'],
             'response': {
                 'text': [
                     "We have a development team, event team, hackathon team, graphics team and even a PR team!\u000A\u000AWhile most of our members are computer scientists, many of us study electrical engineering, mathematics, economy, neuroscience and even business!"
                 ],
                 'replies': [
-                    'I want to join HackSoc'
+                    'I want to join you'
                 ]
             }
         },
         {
-            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i sign up', 'i want to join your society'],
+            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i sign up', 'i want to join your society'],
             'response': {
                 'text': [
                     "Awesome! Please join our Facebook group (https://www.facebook.com/groups/HackSocManc/) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
                 ],
                 'replies': [
-                    'Actually I just want to attend events',
-                    'Cool. Do you know any jokes?'
+                    'I just want to see events',
+                    'Know any jokes?'
                 ]
             }
         },
@@ -151,15 +151,15 @@ module.exports = {
             'messages': ['actually i just want to attend events', 'i just want to go to events', 'i just want to attend events', 'i dont want to help', 'can i come to events', 'can i come to your events', 'can i come to hacksoc events', 'do i need to be in hacksoc', 'do i need to be in hacksoc to go to events', 'do i need to be in hacksoc to go to your events', 'do i have to be in hacksoc', 'do i have to be in hacksoc to attend events', 'do i have to be a member to attend events', 'do i have to be a member'],
             'response': {
                 'text': [
-                    "Our events are open to *everyone! You don't have to be part of HackSoc to come, but we'd be very happy if you joined our Facebook group (https://www.facebook.com/groups/HackSocManc/)!\u000A\u000A* Although most HackSoc events require you to be a student. Feel free to ask a HackSoc member if you're not sure!"
+                    "Our events are open to *everyone! You don't have to be part of HackSoc to come, but we'd be very happy if you joined our Facebook group (https://www.facebook.com/groups/HackSocManc/)!\u000A\u000A* Most HackSoc events require you to be a student. Feel free to ask a HackSoc member if you're not sure!"
                 ],
                 'replies': [
-                    'Okay. Can you tell me a joke?'
+                    'Say something funny'
                 ]
             }
         },
         {
-            'messages': ['cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
+            'messages': ['cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'i lold', 'im lolling', 'loled', 'lolling', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'say something funny', 'make me laugh', 'make me lol', 'you laugh you lose', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
             'response': {
                 'text': [
                     "Q: Why do programmers mix up Halloween and Christmas? \u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
