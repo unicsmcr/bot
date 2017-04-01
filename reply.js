@@ -19,7 +19,7 @@ if (!PAGE_ACCESS_TOKEN) {
  */
 function handleMessageEvent(event) {
     let senderId = event.sender.id;
-    let message = event.quick_reply ? event.quick_reply.payload : null;
+    let message = event.quick_reply ? event.quick_reply.payload : event.text;
     sendQuickReply(senderId, message);
 }
 
@@ -32,7 +32,7 @@ function sendQuickReply(recipientID, message) {
         'for the horde'].includes(message)) {
         response = helpers.createResponse('Hello! Nice to meet you. :-)');
     } else if (["what's hacksoc", "what is hacksoc", "whats hacksoc", "who are you", "what are you",
-        "what do you do", "why hacksoc"]) {
+        "what do you do", "why hacksoc"].includes(message)) {
         response = helpers.createResponse(
             "We're a student-led tech society that's based in Manchester. We'd be very happy if " +
             "you dropped by at our events! :-)",
