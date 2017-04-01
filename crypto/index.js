@@ -27,6 +27,8 @@ function verifyRequestSignature(req, res, buf) {
         res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }
+
+    debug.info.authorizedRequestCount++;    
 }
 
 module.exports = {
