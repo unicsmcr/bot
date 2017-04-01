@@ -20,15 +20,13 @@ function setupRoutes(app) {
     });
 
     app.post('/webhook', function(req, res) {
-        let data = req.body;
-
-        if (data.object != 'page') {
+        if (req.body.object != 'page') {
             debug.info.errors.badRequestCount++;
             res.sendStatus(400);
             return;
         }
 
-        data.entry.forEach(function(pageEntry) {
+        req.body.entry.forEach(function(pageEntry) {
             // Iterate over each messaging event.
             pageEntry.messaging.forEach(function(event) {
                 if (event.message) {
