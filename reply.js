@@ -2,8 +2,46 @@ const
     config = require('./config'),
     debug = require('./debug'),
     dialog = require('./dialog'),
-    helpers = require('./helpers'),
     request = require('request');
+
+function normalizeMessage(message) {
+    if (!message) {
+        return message;
+    }
+
+    message = message.trim();
+    message = message.replace("'", '');
+    message = message.replace('?', '');
+    message = message.replace('.', '');
+    message = message.replace('!', '');
+    message = message.toLowerCase();
+    
+    return message;
+}
+
+function parseResponse(response) {
+    // Randomly choose a response text from the text array.
+    let text = response.text[Math.floor(Math.random() * response.text.length)];
+
+    if (!response.replies) {
+        return {
+            text: text
+        };
+    }
+
+    let replies = response.replies.map(function(reply) {
+        return {
+            'content_type': 'text',
+            'title': reply,
+            'payload': reply
+        };
+    });
+
+    return {
+        text: text,
+        quick_replies: replies
+    };
+}
 
 /**
  * This event is called when a message is sent to the bot. The 'message' object format can vary
@@ -18,7 +56,7 @@ function handleMessageEvent(event) {
 }
 
 function sendQuickReply(recipientID, message) {
-    message = helpers.normalizeMessage(message);
+    message = normalizeMessage(message);
 
     let response;
 
@@ -26,13 +64,13 @@ function sendQuickReply(recipientID, message) {
         let option = dialog.options[i];
 
         if (option.messages.includes(message)) {
-            response = helpers.parseResponse(option.response);
+            response = parseResponse(option.response);
             break;
         }
     }
 
     if (!response) {
-        response = helpers.parseResponse(dialog.default_response);
+        response = parseResponse(dialog.default_response);
     }
 
     let messageData = {

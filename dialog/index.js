@@ -34,7 +34,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke'],
+            'messages': ['haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
             'response': {
                 'text': [
                     "Q: Why do programmers mix up Halloween and Christmas? \u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
@@ -45,4 +45,4 @@ module.exports = {
             }
         },
     ]
-}
+};

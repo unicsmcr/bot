@@ -1,4 +1,4 @@
-const config = require('./config.json')
+const config = require('./config.json');
 
 const APP_SECRET = process.env.HACKSOC_BOT_APP_SECRET
     ? process.env.HACKSOC_BOT_APP_SECRET
@@ -41,4 +41,4 @@ module.exports = {
     pageAccessToken: PAGE_ACCESS_TOKEN,
     port: PORT,
     validationToken: VALIDATION_TOKEN
-}
+};
