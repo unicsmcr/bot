@@ -1,4 +1,5 @@
 const
+    config = require('../config'),
     crypto = require('crypto'),
     debug = require('../debug');
 
