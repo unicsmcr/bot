@@ -1,5 +1,6 @@
 const
     config = require('config'),
+    dialog = require('./dialog'),
     helpers = require('./helpers'),
     request = require('request');
 
@@ -29,24 +30,17 @@ function sendQuickReply(recipientID, message) {
 
     let response;
 
-    if (['hello', 'hi', 'hey', 'hyia', 'hei', 'oy', 'greetings', 'how do you do', "mlady",
-        'for the horde'].includes(message)) {
-        response = helpers.createResponse('Hello! Nice to meet you. :-)');
-    } else if (["what is hacksoc", "whats hacksoc", "who are you", "what are you", "what do you do",
-        "why hacksoc"].includes(message)) {
-        response = helpers.createResponse(
-            "We're a student-led tech society that's based in Manchester. We'd be very happy if " +
-            "you dropped by at our events! :-)",
-            [['Any upcoming events?', 'any upcoming events?'],
-            ["Who's behind HackSoc?", "who's behind hacksoc?"],
-            ['Can I join you?', 'can i join you?']]);
-    } else {
-        response = helpers.createResponse(
-            'Hey there! How may I help you?',
-            [["What's HackSoc?", "what's hacksoc?"],
-            ['Any upcoming events?', 'any upcoming events?'],
-            ["Who's behind HackSoc?", "who's behind hacksoc?"],
-            ['Can I join you?', 'can i join you?']]);
+    for (let i in dialog.options) {
+        let option = dialog.options[i];
+
+        if (option.messages.includes(message)) {
+            response = helpers.parseResponse(option.response);
+            break;
+        }
+    }
+
+    if (!response) {
+        response = helpers.parseResponse(dialog.default_response);
     }
 
     let messageData = {
@@ -55,6 +49,9 @@ function sendQuickReply(recipientID, message) {
         },
         message: response
     };
+
+    console.log(response);
+    return;
 
     callSendAPI(messageData);
 }

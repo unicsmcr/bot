@@ -11,22 +11,28 @@ if (!APP_SECRET) {
     process.exit(1);
 }
 
-function createResponse(text, quick_replies) {
-    let response = {
-        text: text
+function parseResponse(response) {
+    // Randomly choose a response text from the text array.
+    let text = response.text[Math.floor(Math.random() * response.text.length)];
+
+    if (!response.replies) {
+        return {
+            text: text
+        }
     }
 
-    if (quick_replies) {
-        response.quick_replies = quick_replies.map(function(reply) {
-            return {
-                'content_type': 'text',
-                'title': reply[0],
-                'payload': reply[1]
-            };
-        });
-    }
+    let replies = response.replies.map(function(reply) {
+        return {
+            'content_type': 'text',
+            'title': reply,
+            'payload': reply
+        };
+    });
 
-    return response;
+    return {
+        text: text,
+        quick_replies: replies
+    }
 }
 
 function normalizeMessage(message) {
@@ -68,7 +74,7 @@ function verifyRequestSignature(req, res, buf) {
 }
 
 module.exports = {
-    createResponse: createResponse,
+    parseResponse: parseResponse,
     normalizeMessage: normalizeMessage,
     verifyRequestSignature: verifyRequestSignature
 };
