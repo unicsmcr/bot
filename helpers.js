@@ -50,9 +50,9 @@ function verifyRequestSignature(req, res, buf) {
     let signature = req.headers['x-hub-signature'];
 
     if (!signature || signature.indexOf('=') === -1) {
-        debug.info.errorCount++;
+        debug.info.errors.unauthorizedCount++;
         res.sendStatus(403);
-        throw new Error('Could not validate the request signature.');
+        throw new Error('Request must include "x-hub-signature" header with value "sha1=...".');
     }
 
     let elements = signature.split('=');
@@ -63,7 +63,7 @@ function verifyRequestSignature(req, res, buf) {
         .digest('hex');
 
     if (signatureHash != expectedHash) {
-        debug.info.errorCount++;
+        debug.info.errors.unauthorizedCount++;
         res.sendStatus(403);
         throw new Error('Could not validate the request signature.');
     }

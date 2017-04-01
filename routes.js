@@ -13,7 +13,7 @@ function setupRoutes(app) {
             console.log('Webhook validated.');
             res.status(200).send(req.query['hub.challenge']);
         } else {
-            debug.info.errorCount++;
+            debug.info.errors.unauthorizedCount++;
             console.error('Failed validation. Make sure the validation tokens match.');
             res.sendStatus(403);
         }  
@@ -23,7 +23,7 @@ function setupRoutes(app) {
         let data = req.body;
 
         if (data.object != 'page') {
-            debug.info.errorCount++;
+            debug.info.errors.badRequestCount++;
             res.sendStatus(400);
             return;
         }
@@ -34,7 +34,7 @@ function setupRoutes(app) {
                 if (event.message) {
                     reply.handleMessageEvent(event);
                 } else {
-                    debug.info.errorCount++;
+                    debug.info.errors.unknownMessageCount++;
                     console.log('Webhook received unknown messaging event:', event);
                 }
             });
