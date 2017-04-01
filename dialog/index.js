@@ -1,8 +1,8 @@
 module.exports = {
     'default_response': {
         'text': [
-            'Hey there! How may I help you?',
-            'Hello! How may I help you?'
+            'What would you like to know about?',
+            'How may I help you?'
         ],
         'replies': [
             'What can you do?',
@@ -12,16 +12,26 @@ module.exports = {
     },
     'options': [
         {
-            'messages': ['hello', 'hi', 'hey', 'hyia', 'hei', 'oy', 'greetings', 'how do you do', 'mlady', 'for the horde'],
+            'messages': ['hello', 'hi', 'hey', 'hyia', 'hiya', 'hei', 'oy', 'hey there', 'hi there', 'hello there', 'hey man', 'yo', 'oh hi', 'o hi', 'o hai', 'greetings', 'greetings and salutations', 'how do you do', 'mlady', 'for the horde'],
             'response': {
                 'text': [
                     'Hello! Nice to meet you. :-)',
-                    "Hi! I hope you're having an awesome day!"
+                    "Hi! I hope you're having a great day!",
+                    "Hey! What a great day for hacking. :D"
                 ]
             }
         },
         {
-            'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what do you do', 'why hacksoc'],
+            'messages': ['how are you', 'how r u', 'sup', 'wassup', 'whats up', 'hows it going', 'hows it goin'],
+            'response': {
+                'text': [
+                    "I'm feeling great, thanks for asking! Wanna know more about HackSoc?",
+                    "I'm ready for hacking!"
+                ]
+            }
+        },
+        {
+            'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me'],
             'response': {
                 'text': [
                     "We're a student-led tech society that's based in Manchester. We'd be very happy if you dropped by at our events! :-)"
