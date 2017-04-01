@@ -1,15 +1,6 @@
 const
-    config = require('config'),
+    config = require('./config'),
     crypto = require('crypto');
-
-const APP_SECRET = process.env.HACKSOC_BOT_APP_SECRET
-    ? process.env.HACKSOC_BOT_APP_SECRET
-    : config.get('appSecret');
-
-if (!APP_SECRET) {
-    console.error('Missing config value for app secret.');
-    process.exit(1);
-}
 
 function parseResponse(response) {
     // Randomly choose a response text from the text array.

@@ -1,17 +1,8 @@
 const
-    config = require('config'),
+    config = require('./config'),
     dialog = require('./dialog'),
     helpers = require('./helpers'),
     request = require('request');
-
-const PAGE_ACCESS_TOKEN = process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
-    ? process.env.HACKSOC_BOT_PAGE_ACCESS_TOKEN
-    : config.get('pageAccessToken');
-
-if (!PAGE_ACCESS_TOKEN) {
-    console.error('Missing config value for page access token.');
-    process.exit(1);
-}
 
 /**
  * This event is called when a message is sent to the bot. The 'message' object format can vary
@@ -50,16 +41,13 @@ function sendQuickReply(recipientID, message) {
         message: response
     };
 
-    console.log(response);
-    return;
-
     callSendAPI(messageData);
 }
 
 function callSendAPI(messageData) {
     request({
         uri: 'https://graph.facebook.com/v2.8/me/messages',
-        qs: { access_token: PAGE_ACCESS_TOKEN },
+        qs: { access_token: config.pageAccessToken },
         method: 'POST',
         json: messageData
 
