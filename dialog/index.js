@@ -55,7 +55,7 @@ module.exports = {
             'messages': ['whats a hackathon', 'what is a hackathon', 'what are hackathons', 'hackathons', 'why is it called a hackathon', 'why are they called hackathons', 'why is it called hackathon', 'why is it named hackathon', 'why are they named hackathons', 'define hackathons', 'define hackathon'],
             'response': {
                 'text': [
-                    "A hackathon is best described as an \"invention marathon\". Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don't have to be a programmer and you certainly don't have to be majoring in Computer Science.\u000A\u000A(P.S. I've taken this definition from https://mlh.io/faq :D)",
+                    "A hackathon is best described as an \"invention marathon\". Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. You don't have to be a programmer and you certainly don't have to be majoring in Computer Science.\u000A\u000A(P.S. I've taken this definition from https://mlh.io/faq :D )",
                 ]
             }
         },
@@ -204,6 +204,7 @@ module.exports = {
                     "The hackathon team organizes our seasonal hackathons, including GreatUniHack, StudentHack and even CS50!\u000A\u000AOur hackathon directors are Cornelia Secelean, Igor Wodiany, Mihai Bujanca, Preslav Venkov and Raul Ignatus."
                 ],
                 'replies': [
+                    "What's a hackathon?",
                     'Dev team',
                     'Event team',
                     'Graphics team',
