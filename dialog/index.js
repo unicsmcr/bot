@@ -133,7 +133,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'anyone else', 'any teams', 'teams', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'dev team', 'pr team', 'graphics team', 'organizers'],
+            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'anyone else', 'any teams', 'teams', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'organizers'],
             'response': {
                 'text': [
                     "We have a development team, event team, hackathon team, graphics team and even a PR team!\u000A\u000AWhile most of our members are computer scientists, many of us study electrical engineering, mathematics, economy, neuroscience and even business!"
@@ -230,7 +230,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['whos the president of hacksoc', 'who is the president of hacksoc', 'hacksoc president', 'hacksoc leader', 'who leads hacksoc'],
+            'messages': ['whos the president of hacksoc', 'who is the president of hacksoc', 'whos president', 'hacksoc president', 'hacksoc leader', 'who leads hacksoc'],
             'response': {
                 'text': [
                     'The president of HackSoc is Cristian Bodnar, a Computer Science student at The University of Manchester. :)'
