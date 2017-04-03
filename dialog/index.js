@@ -57,6 +57,9 @@ module.exports = {
                 'text': [
                     'I was created by our wonderful dev team! If you want to see my code, check out https://github.com/hacksoc-manchester/bot.',
                     'I have no beginning. I have no end.'
+                ],
+                'replies': [
+                    "What's a 'dev team'?"
                 ]
             }
         },
@@ -179,7 +182,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['developers', 'dev', 'do you have a dev team', 'whos in the dev team', 'who is in the dev team', 'who is dev officer', 'who is the dev officer', 'whos the dev officer', 'who are the dev team members', 'who is in dev', 'whos in dev', 'who is in dev team', 'whos in dev team', 'tell me about the dev team', 'tell me about dev team', 'dev team', 'what does the dev team do'],
+            'messages': ['developers', 'dev', 'whats a dev team', 'do you have a dev team', 'whos in the dev team', 'who is in the dev team', 'who is dev officer', 'who is the dev officer', 'whos the dev officer', 'who are the dev team members', 'who is in dev', 'whos in dev', 'who is in dev team', 'whos in dev team', 'tell me about the dev team', 'tell me about dev team', 'dev team', 'what does the dev team do'],
             'response': {
                 'text': [
                     "The dev team creates applications for the society. This includes our website, Hackathon-related websites and even Facebook bots like myself!\u000A\u000AThe current members of the dev team are Andrei Belcin, Aayush Chadha, Raul Ignatus and the team officer is Andrei Muntean."
@@ -195,7 +198,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['public relations', 'pr', 'do you have a pr team', 'whos in the pr team', 'who is in the pr team', 'who is pr officer', 'who is the pr officer', 'whos the pr officer', 'who are the pr team members', 'who is in pr', 'whos in pr', 'who is in pr team', 'whos in pr team', 'tell me about the pr team', 'tell me about pr team', 'pr team', 'what does the pr team do'],
+            'messages': ['public relations', 'pr', 'whats a pr team', 'do you have a pr team', 'whos in the pr team', 'who is in the pr team', 'who is pr officer', 'who is the pr officer', 'whos the pr officer', 'who are the pr team members', 'who is in pr', 'whos in pr', 'who is in pr team', 'whos in pr team', 'tell me about the pr team', 'tell me about pr team', 'pr team', 'what does the pr team do'],
             'response': {
                 'text': [
                     "The PR team manages our Twitter page (https://twitter.com/hacksocmcr) and our Facebook pages.\u000A\u000AThe current members of the PR team are Catalina Maria Vlad and Maria Revenco (Maria's also the team officer!)."
@@ -211,7 +214,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['event organizers', 'event', 'do you have an event team', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
+            'messages': ['event organizers', 'event', 'whats an event team', 'do you have an event team', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
             'response': {
                 'text': [
                     "The event team frequently organizes tech events, including workshops and monthly talks given by industry experts.\u000A\u000AOur current event directors are Miruna Pislar and Robert Ihnatisin."
@@ -227,7 +230,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['do you have a hackathon team', 'whos in the hackathon team', 'who is in the hackathon team', 'tell me about the hackathon team', 'hackathon team', 'tell me about hackathon team', 'what does the hackathon team do', 'hackathon organizers', 'hackathon directors', 'who organizes hackathons', 'people in charge of hackathons'],
+            'messages': ['do you have a hackathon team', 'whats a hackathon team', 'whos in the hackathon team', 'who is in the hackathon team', 'tell me about the hackathon team', 'hackathon team', 'tell me about hackathon team', 'what does the hackathon team do', 'hackathon organizers', 'hackathon directors', 'who organizes hackathons', 'people in charge of hackathons'],
             'response': {
                 'text': [
                     "The hackathon team organizes our seasonal hackathons, including GreatUniHack, StudentHack and even CS50!\u000A\u000AOur hackathon directors are Cornelia Secelean, Igor Wodiany, Mihai Bujanca, Preslav Venkov and Raul Ignatus."
