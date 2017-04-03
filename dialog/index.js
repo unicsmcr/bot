@@ -36,6 +36,26 @@ module.exports = {
             }
         },
         {
+            'messages': ['bye', 'bye bot', 'bye hacksoc', 'bye hacksocbot', 'bye hacksoc bot', 'goodbye', 'goodbye bot', 'goodbye hacksoc', 'goodbye hacksocbot', 'goodbye hacksoc bot', 'good bye', 'good bye bot', 'good bye hacksoc', 'good bye hacksocbot', 'good bye hacksoc bot', 'see you', 'see ya', 'cya', 'c ya', 'bye bye', 'buh bye', 'see you later', 'i got to go', 'got to go', 'i gotta go', 'gotta go', 'i must go now', 'i must leave now', 'good night', 'talk to you later', 'ceaules', 'arrivederci', 'sayonara'],
+            'response': {
+                'text': [
+                    'Goodbye! It was nice talking to you. :D',
+                    'Goodbye! It was nice seeing you. ^_^',
+                    'Goodbye! It was great seeing you. ^_^',
+                    "See you later! Hope you'll have a great day! :-)",
+                    "See you later! I hope you'll have a great day! :-)",
+                    'Goodbye! ^_^',
+                    'Goodbye! :-)',
+                    'Goodbye and take care! :-)',
+                    'Goodbye and take care! ^_^',
+                    'Goodbye and take care! :D',
+                    'I hope to see you again soon! ^_^',
+                    'Take care! :-)',
+                    'See you! Take care. :-)'
+                ]
+            }
+        },
+        {
             'messages': ['whats the meaning of life', 'what is the meaning of life', 'whats the purpose of life', 'what is the purpose of life', 'what is the point of life', 'whats the point of life', 'what is the point of living', 'whats the point of living', 'what is the point in living', 'whats the point in living', 'are you religious', 'is god real', 'can entropy be reversed', 'is there an afterlife', 'do you believe in god', 'who made us', 'do you believe in anything'],
             'response': {
                 'text': [
