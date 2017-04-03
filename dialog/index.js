@@ -103,7 +103,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['woah thats cool', 'wow', 'that is cool', 'thats cool', 'awesome', 'amazing', 'very cool', 'very awesome', 'splendid', 'magnificent', 'how beautiful', 'woah'],
+            'messages': ['woah thats cool', 'wow', 'wow impressive', 'wow impressing', 'impressive', 'impressing', 'that is cool', 'thats cool', 'awesome', 'amazing', 'very cool', 'very awesome', 'splendid', 'magnificent', 'how beautiful', 'woah'],
             'response': {
                 'text': [
                     'I know, right!? :D',
@@ -128,10 +128,24 @@ module.exports = {
             }
         },
         {
-            'messages': ['whats your name', 'what is your name', 'what are you called', 'your name'],
+            'messages': ['whats your name', 'what is your name', 'what are you called', 'your name', 'do you have a name', 'what do they call you'],
             'response': {
                 'text': [
                     "I'm the friendly HackSoc bot! ^_^"
+                ],
+                'replies': [
+                    "What's HackSoc?",
+                    "Who's in HackSoc?"
+                ]
+            }
+        },
+        {
+            'messages': ['youre funny', 'you are funny', 'youre smart', 'you are smart', 'youre cool', 'you are cool', 'youre awesome', 'you are awesome', 'youre impressive', 'you are impressive', 'youre pretty cool', 'you are pretty cool', 'i think youre cool', 'i think you are cool', 'i think youre awesome', 'i think you are awesome', 'i like you', 'you loyal'],
+            'response': {
+                'text': [
+                    'Aww, thank you! B-)',
+                    "Thanks! You're pretty awesome as well! B-)",
+                    "You're making me blush! ^_^"
                 ],
                 'replies': [
                     "What's HackSoc?",
