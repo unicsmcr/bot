@@ -166,7 +166,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
+            'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what have you been up to', 'what are you up to', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
             'response': {
                 'text': [
                     "We're a student-led tech society that's based in Manchester. We'd be very happy if you dropped by at our events! :-)"
