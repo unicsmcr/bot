@@ -25,29 +25,21 @@ module.exports = {
             }
         },
         {
-            'messages': ['hello', 'hi', 'hey', 'hyia', 'hiya', 'hei', 'oy', 'hey there', 'hi there', 'hello there', 'hey man', 'yo', 'oh hi', 'o hi', 'o hai', 'greetings', 'greetings and salutations', 'how do you do', 'mlady', 'for the horde'],
+            'messages': ['hello', 'hi', 'hey', 'hyia', 'hiya', 'hei', 'oy', 'hey there', 'hi there', 'hello there', 'hey man', 'hey bro', 'ey bro', 'ey', 'ayy', 'ayyy', 'yo', 'oh hi', 'o hi', 'o hai', 'greetings', 'greetings and salutations', 'how do you do', 'mlady', 'for the horde'],
             'response': {
                 'text': [
                     'Hello! Nice to meet you. :-)',
                     "Hi! I hope you're having a great day!",
-                    "Hey! What a great day for hacking. :D"
+                    "Hey! What a great day for hacking. :D",
+                    'Hello! A pleasure to see you. :-)'
                 ]
             }
         },
         {
-            'messages': ['whats the meaning of life', 'what is the meaning of life', 'are you religious', 'is god real', 'can entropy be reversed', 'is there an afterlife', 'do you believe in god', 'who made us', 'do you believe in anything'],
+            'messages': ['whats the meaning of life', 'what is the meaning of life', 'whats the purpose of life', 'what is the purpose of life', 'what is the point of life', 'whats the point of life', 'what is the point of living', 'whats the point of living', 'what is the point in living', 'whats the point in living', 'are you religious', 'is god real', 'can entropy be reversed', 'is there an afterlife', 'do you believe in god', 'who made us', 'do you believe in anything'],
             'response': {
                 'text': [
                     'INSUFFICIENT DATA FOR A MEANINGFUL ANSWER.'
-                ]
-            }
-        },
-        {
-            'messages': ['how are you', 'how r u', 'sup', 'wassup', 'whats up', 'hows it going', 'hows it goin'],
-            'response': {
-                'text': [
-                    "I'm feeling great, thanks for asking! Wanna know more about HackSoc?",
-                    "I'm ready for hacking!"
                 ]
             }
         },
@@ -69,9 +61,23 @@ module.exports = {
             }
         },
         {
-            'messages': ['what are you doing', 'what you up to', 'what are you up to', 'what you doing'],
+            'messages': ['website', 'do you have a website', 'do you have any website', 'where can I find you', 'how can I find you', 'where can I see more info'],
             'response': {
                 'text': [
+                    'Our website is http://hacksoc.com but you can also find us on Facebook at https://www.facebook.com/groups/HackSocManc!'
+                ],
+                'replies': [
+                    "What's HackSoc?",
+                    'Any upcoming events?',
+                ]
+            }
+        },
+        {
+            'messages': ['how are you', 'how was your day', 'how was ur day', 'how r u', 'sup', 'wassup', 'whats up', 'hows it going', 'hows it goin', 'what are you doing', 'what you up to', 'what are you up to', 'what you doing'],
+            'response': {
+                'text': [
+                    "I'm feeling great, thanks for asking! Wanna know more about HackSoc?",
+                    "I'm ready for hacking!",
                     "I'm thinking of doing some machine learning.",
                     "I'm doing some linear regression.",
                     "I'm in the middle of some calibrations.",
@@ -108,6 +114,29 @@ module.exports = {
             }
         },
         {
+            'messages': ['why', 'how', 'what', 'huh'],
+            'response': {
+                'text': [
+                    "My memory is very limited so unfortunately I can't respond. :( Would you like to hear a joke? :D"
+                ],
+                'replies': [
+                    'Sure!'
+                ]
+            }
+        },
+        {
+            'messages': ['whats your name', 'what is your name', 'what are you called', 'your name'],
+            'response': {
+                'text': [
+                    "I'm the friendly HackSoc bot! ^_^"
+                ],
+                'replies': [
+                    "What's HackSoc?",
+                    "Who's in HackSoc?"
+                ]
+            }
+        },
+        {
             'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
             'response': {
                 'text': [
@@ -133,7 +162,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'anyone else', 'any teams', 'teams', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'organizers'],
+            'messages': ['whos behind hacksoc', 'whos in hacksoc', 'what teams do you have', 'who are the people in hacksoc', 'anyone else', 'any teams', 'teams', 'who are the people behind hacksoc', 'who is your boss', 'who is leading hacksoc', 'whos leading hacksoc', 'whos in hacksoc', 'people', 'what members do you have', 'do you have any members', 'members', 'who are your members', 'who are the members', 'who is in hacksoc', 'whos in hacksoc', 'who is behind hacksoc', 'hacksoc teams', 'organizers'],
             'response': {
                 'text': [
                     "We have a development team, event team, hackathon team, graphics team and even a PR team!\u000A\u000AWhile most of our members are computer scientists, many of us study Electrical Engineering, Mathematics, Economy, Neuroscience and even Business!"
@@ -266,7 +295,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'i lold', 'im lolling', 'loled', 'lolling', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'say something funny', 'make me laugh', 'make me lol', 'you laugh you lose', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
+            'messages': ['sure', 'yes', 'okay', 'cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'i lold', 'im lolling', 'loled', 'lolling', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'say something funny', 'make me laugh', 'make me lol', 'you laugh you lose', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
             'response': {
                 'text': [
                     "Q: Why do programmers mix up Halloween and Christmas? \u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
