@@ -87,7 +87,7 @@ module.exports = {
             'messages': ['website', 'do you have a website', 'do you have any website', 'where can i find you', 'how can i find you', 'where can i see more info'],
             'response': {
                 'text': [
-                    'Our website is http://hacksoc.com but you can also find us on Facebook at https://www.facebook.com/groups/HackSocManc!'
+                    'Our website is http://hacksoc.com but you can also find us on Facebook at https://facebook.com/groups/HackSocManc!'
                 ],
                 'replies': [
                     "What's HackSoc?",
@@ -195,6 +195,19 @@ module.exports = {
                     'Any upcoming events?',
                     "Who's in HackSoc?",
                     'Can I join you?'
+                ]
+            }
+        },
+        {
+            'messages': ['programming help', 'coding help', 'i want to learn how to program', 'i wanna learn how to program', 'i want to learn how to code', 'i wanna learn how to code', 'programming workshops', 'tech workshops', 'hardware workshops', 'coding workshops', 'how can i learn to code', 'how can i start coding', 'how do i start coding', 'how can i learn to program', 'how can i start programming', 'how do i start programming', 'i dont know how to program', 'i dont know how to code', 'teach me how to program', 'teach me how to code', 'can you teach me how to program', 'can you teach me how to code', 'where can i learn how to program', 'where can i learn how to code', 'i want to start programming', 'i wanna start programming', 'i want to start coding', 'i wanna start coding'],
+            'response': {
+                'text': [
+                    "We frequently organize tech events, including workshops -- many of which require no background knowledge! -- and monthly talks given by industry experts.\u000A\u000AIf you need any tech-related help (including how to start programming!) please join our Facebook group (https://facebook.com/groups/HackSocManc) and get in touch! Our members are very friendly and eager to help! :-)"
+                ],
+                'replies': [
+                    'Any upcoming events?',
+                    "Who's in HackSoc?",
+                    'How can I join?'
                 ]
             }
         },
@@ -321,10 +334,10 @@ module.exports = {
             }
         },
         {
-            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i sign up', 'i want to join your society'],
+            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'can i join', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i join', 'how can i join you', 'how can i sign up', 'i want to join the society', 'i want to join your society'],
             'response': {
                 'text': [
-                    "Awesome! Please join our Facebook group (https://www.facebook.com/groups/HackSocManc/) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
+                    "Awesome! Please join our Facebook group (https://facebook.com/groups/HackSocManc) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
                 ],
                 'replies': [
                     'I just want to visit',
@@ -336,7 +349,7 @@ module.exports = {
             'messages': ['actually i just want to attend events', 'i just want to visit', 'i just want to go to events', 'i just want to attend events', 'i dont want to help', 'can i come to events', 'can i come to your events', 'can i come to hacksoc events', 'do i need to be in hacksoc', 'do i need to be in hacksoc to go to events', 'do i need to be in hacksoc to go to your events', 'do i have to be in hacksoc', 'do i have to be in hacksoc to attend events', 'do i have to be a member to attend events', 'do i have to be a member'],
             'response': {
                 'text': [
-                    "Our events are open to *everyone! You don't have to be part of HackSoc to come, but we'd be very happy if you joined our Facebook group (https://www.facebook.com/groups/HackSocManc/)!\u000A\u000A* Most HackSoc events require you to be a student. Feel free to ask a HackSoc member if you're not sure!"
+                    "Our events are open to *everyone! You don't have to be part of HackSoc to come, but we'd be very happy if you joined our Facebook group (https://facebook.com/groups/HackSocManc)!\u000A\u000A* Most HackSoc events require you to be a student. Feel free to ask a HackSoc member if you're not sure!"
                 ],
                 'replies': [
                     'Say something funny'
@@ -347,7 +360,7 @@ module.exports = {
             'messages': ['sure', 'yes', 'okay', 'cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'i lold', 'im lolling', 'loled', 'lolling', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'say something funny', 'make me laugh', 'make me lol', 'you laugh you lose', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
             'response': {
                 'text': [
-                    "Q: Why do programmers mix up Halloween and Christmas? \u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
+                    "Q: Why do programmers mix up Halloween and Christmas?\u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
                     '- "Knock Knock!" \u000A- "Who is it?" \u000A- "Please don\'t turn off your PC. Installing update 1 of 9001..." ',
                     '- "Knock Knock!" \u000A- "Who is it?" \u000A[Very short pause] \u000ASegmentation fault',
                     '- "Knock Knock!" \u000A- "Is it Linux?" \u000A- "I\'d just like to interject for a moment. What you\'re referring to as Linux, is in fact, GNU/Linux, or as I\'ve recently taken to calling it, GNU plus Linux."',                    
