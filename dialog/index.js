@@ -186,7 +186,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['what is hacksoc', 'whats hacksoc', 'who are you', 'what are you', 'what have you been up to', 'what are you up to', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
+            'messages': ['what is hacksoc', 'what is hacksoc about', 'whats hacksoc', 'whats hacksoc about', 'who are you', 'what are you', 'what have you been up to', 'what are you up to', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
             'response': {
                 'text': [
                     "We're a student-led tech society that's based in Manchester. We'd be very happy if you dropped by at our events! :-)"
@@ -212,7 +212,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['okay but whats hacksoc doing', 'whats hacksoc doing', 'what is hacksoc doing', 'i meant the society', 'i mean the society', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'upcoming events', 'events', 'any events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
+            'messages': ['okay but whats hacksoc doing', 'cool but whats hacksoc doing', 'whats hacksoc doing', 'what is hacksoc doing', 'i meant the society', 'i mean the society', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'upcoming events', 'events', 'any events', 'are there any events', 'are there any upcoming events', 'future events', 'any future events', 'are there any future events', 'will there be any new events', 'any new events', 'are there any new events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
             'response': {
                 'text': [
                     "We're currently working on more events for you to enjoy. Please check back in the near future! :-)"
@@ -334,7 +334,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'can i join', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i join', 'how can i join you', 'how can i sign up', 'i want to join the society', 'i want to join your society'],
+            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'can i join', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i join', 'how can i join you', 'how can i join hacksoc', 'how can i join the society', 'how can i sign up', 'how do i sign up', 'i want to join the society', 'i want to join your society'],
             'response': {
                 'text': [
                     "Awesome! Please join our Facebook group (https://facebook.com/groups/HackSocManc) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
