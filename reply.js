@@ -10,13 +10,7 @@ function normalizeMessage(message) {
     }
 
     message = message.trim();
-    message = message.replace("'", '');
-    message = message.replace('?', '');
-    message = message.replace('.', '');
-    message = message.replace(',', '');
-    message = message.replace('!', '');
-    message = message.replace('-', '');
-    message = message.replace('_', '');
+    message = message.replace(/'|\?|\.|,|!|-|_/g, '');
     message = message.toLowerCase();
     
     return message;
