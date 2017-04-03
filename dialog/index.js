@@ -260,7 +260,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['event organizers', 'event', 'whats an event team', 'do you have an event team', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
+            'messages': ['event organizers', 'event', 'whats an event team', 'do you have an event team', 'whos organizing events', 'who is organizing events', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who are the event directors', 'who are the event organizers', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
             'response': {
                 'text': [
                     "The event team frequently organizes tech events, including workshops and monthly talks given by industry experts.\u000A\u000AOur current event directors are Miruna Pislar and Robert Ihnatisin."
@@ -276,7 +276,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['do you have a hackathon team', 'whats a hackathon team', 'whos in the hackathon team', 'who is in the hackathon team', 'tell me about the hackathon team', 'hackathon team', 'tell me about hackathon team', 'what does the hackathon team do', 'hackathon organizers', 'hackathon directors', 'who organizes hackathons', 'people in charge of hackathons'],
+            'messages': ['do you have a hackathon team', 'whats a hackathon team', 'whos in the hackathon team', 'who is in the hackathon team', 'whos organizing hackathons', 'who is organizing hackathons', 'tell me about the hackathon team', 'hackathon team', 'tell me about hackathon team', 'what does the hackathon team do', 'who are the hackathon organizers', 'hackathon organizers', 'who are the hackathon directors', 'hackathon directors', 'who organizes hackathons', 'people in charge of hackathons'],
             'response': {
                 'text': [
                     "The hackathon team organizes our seasonal hackathons, including GreatUniHack, StudentHack and even CS50!\u000A\u000AOur hackathon directors are Cornelia Secelean, Igor Wodiany, Mihai Bujanca, Preslav Venkov and Raul Ignatus."
