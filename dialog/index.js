@@ -334,7 +334,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['i want to join hacksoc', 'can i join hacksoc', 'can i join', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i join', 'how can i join you', 'how can i join hacksoc', 'how can i join the society', 'how can i sign up', 'how do i sign up', 'i want to join the society', 'i want to join your society'],
+            'messages': ['join hacksoc', 'sign up to hacksoc', 'i want to join hacksoc', 'can i join hacksoc', 'can i join', 'could i join you', 'could i join hacksoc', 'where do i sign up', 'i want to join you', 'can i join you', 'i want to help', 'how can i join', 'how can i join you', 'how can i join hacksoc', 'how can i join the society', 'how can i sign up', 'how do i sign up', 'how do i join', 'how do i join hacksoc', 'how do i join you', 'how do i join the society', 'i want to join the society', 'i want to join your society'],
             'response': {
                 'text': [
                     "Awesome! Please join our Facebook group (https://facebook.com/groups/HackSocManc) to get involved. :-) You can also contact one of our so-called 'team officers' (http://hacksoc.com/team) -- feel free to message them on Facebook!"
