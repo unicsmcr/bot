@@ -25,7 +25,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['hello', 'hi', 'hey', 'hyia', 'hiya', 'hei', 'oy', 'hey there', 'hi there', 'hello there', 'hey man', 'hey bro', 'ey bro', 'ey', 'ayy', 'ayyy', 'yo', 'oh hi', 'o hi', 'o hai', 'greetings', 'greetings and salutations', 'how do you do', 'mlady', 'for the horde'],
+            'messages': ['hello', 'hello bot', 'hello hacksoc', 'hello hacksocbot', 'hello hacksoc bot', 'hi', 'hi bot', 'hi hacksoc', 'hi hacksocbot', 'hi hacksoc bot', 'hey', 'hey bot', 'hey hacksoc', 'hey hacksocbot', 'hey hacksoc bot', 'hyia', 'hiya', 'hei', 'oy', 'hey there', 'hi there', 'hello there', 'hey man', 'hey bro', 'ey bro', 'ey', 'ayy', 'ayyy', 'yo', 'oh hi', 'o hi', 'o hai', 'greetings', 'greetings and salutations', 'how do you do', 'mlady', 'for the horde'],
             'response': {
                 'text': [
                     'Hello! Nice to meet you. :-)',
@@ -64,7 +64,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['website', 'do you have a website', 'do you have any website', 'where can I find you', 'how can I find you', 'where can I see more info'],
+            'messages': ['website', 'do you have a website', 'do you have any website', 'where can i find you', 'how can i find you', 'where can i see more info'],
             'response': {
                 'text': [
                     'Our website is http://hacksoc.com but you can also find us on Facebook at https://www.facebook.com/groups/HackSocManc!'
@@ -136,6 +136,18 @@ module.exports = {
                 'replies': [
                     "What's HackSoc?",
                     "Who's in HackSoc?"
+                ]
+            }
+        },
+        {
+            'messages': ['favorite song', 'whats your favorite song', 'what is your favorite song', 'do you have a favorite song', 'favourite song', 'whats your favourite song', 'what is your favourite song', 'do you have a favourite song'],
+            'response': {
+                'text': [
+                    "I don't have a favorite song, but my favorite album is OK Computer.",
+                    "I can't decide on a favorite song, but my favorite album is OK Computer."
+                ],
+                'replies': [
+                    'Tell me a joke!'
                 ]
             }
         },
