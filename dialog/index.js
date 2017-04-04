@@ -12,7 +12,7 @@ module.exports = {
     },
     'options': [
         {
-            'messages': ['what can you do', 'help', 'h', 'what can you tell me', 'i need help', 'how can you help me', 'whats your purpose', 'what is your purpose'],
+            'messages': ['what can you do', 'help', 'h', 'what can you tell me', 'how can you help me', 'whats your purpose', 'what is your purpose'],
             'response': {
                 'text': [
                     "I can try to answer questions about HackSoc. I've just been created so my functionality is very limited, however in time I'll learn and get better! Pinky promise. ^_^"
@@ -112,7 +112,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['website', 'do you have a website', 'do you have any website', 'where can i find you', 'how can i find you', 'where can i see more info'],
+            'messages': ['website', 'do you have a website', 'do you have any website', 'where can i find you', 'how can i find you', 'where can i see more info', 'what is the hacksoc website', 'whats the hacksoc website', 'what is the website', 'whats the website', 'what is your website', 'whats your website', 'give me your website', 'tell me your website', 'how can i contact you', 'i need contact details', 'contact details', 'i need contact details for hacksoc', 'give me your contact details'],
             'response': {
                 'text': [
                     'Our website is http://hacksoc.com but you can also find us on Facebook at https://facebook.com/groups/HackSocManc!'
@@ -159,8 +159,7 @@ module.exports = {
                     'I share your enthusiasm! :D'
                 ],
                 'replies': [
-                    "What's HackSoc doing?",
-                    "Woah, that's cool!"
+                    "What's HackSoc doing?"
                 ]
             }
         },
@@ -227,7 +226,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['programming help', 'coding help', 'help me program', 'help me code', 'i dont know how to program', 'i dont know how to code', 'i dont know anything about programming', 'i dont know anything about coding', 'i dont know anything about computers', 'i want to learn how to program', 'i wanna learn how to program', 'i want to learn how to code', 'i wanna learn how to code', 'programming workshops', 'tech workshops', 'hardware workshops', 'coding workshops', 'how can i learn to code', 'how can i start coding', 'how do i start coding', 'how can i learn to program', 'how can i start programming', 'how do i start programming', 'i dont know how to program', 'i dont know how to code', 'teach me how to program', 'teach me how to code', 'can you teach me how to program', 'can you teach me how to code', 'where can i learn how to program', 'where can i learn how to code', 'i want to start programming', 'i wanna start programming', 'i want to start coding', 'i wanna start coding', 'do you have any programming tips', 'programming tips', 'coding tips', 'programming resources', 'coding resources', 'programming for beginners', 'events for beginners', 'beginner events'],
+            'messages': ['i need help', 'programming help', 'coding help', 'help me program', 'help me code', 'i dont know how to program', 'i dont know how to code', 'i dont know anything about programming', 'i dont know anything about coding', 'i dont know anything about computers', 'i want to learn how to program', 'i wanna learn how to program', 'i want to learn how to code', 'i wanna learn how to code', 'programming workshops', 'tech workshops', 'hardware workshops', 'coding workshops', 'how can i learn to code', 'how can i start coding', 'how do i start coding', 'how can i learn to program', 'how can i start programming', 'how do i start programming', 'i dont know how to program', 'i dont know how to code', 'teach me how to program', 'teach me how to code', 'can you teach me how to program', 'can you teach me how to code', 'where can i learn how to program', 'where can i learn how to code', 'i want to start programming', 'i wanna start programming', 'i want to start coding', 'i wanna start coding', 'do you have any programming tips', 'programming tips', 'coding tips', 'programming resources', 'coding resources', 'programming for beginners', 'events for beginners', 'beginner events'],
             'response': {
                 'text': [
                     "We frequently organize tech events, including workshops -- many of which require no background knowledge! -- and monthly talks given by industry experts.\u000A\u000AIf you need any tech-related help (including how to start programming!) please join our Facebook group (https://facebook.com/groups/HackSocManc) and get in touch! Our members are very friendly and eager to help! :-)"
@@ -350,7 +349,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['whos the president of hacksoc', 'who is the president of hacksoc', 'whos president', 'who is president', 'who is the president', 'hacksoc president', 'hacksoc leader', 'who leads hacksoc'],
+            'messages': ['whos the president of hacksoc', 'who is the president of hacksoc', 'whos president', 'who is president', 'who is the president', 'whos the president', 'hacksoc president', 'hacksoc leader', 'who leads hacksoc'],
             'response': {
                 'text': [
                     'The president of HackSoc is Cristian Bodnar, a Computer Science student at The University of Manchester. :)'
