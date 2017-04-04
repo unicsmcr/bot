@@ -91,6 +91,19 @@ module.exports = {
             }
         },
         {
+            'messages': ['thanks', 'thx', 'ty', '10x', 'thank you', 'thank you very much', 'thanks a lot', 'thank you for your help', 'thank you for the info', 'thanks for letting us know'],
+            'response': {
+                'text': [
+                    "I'm glad to have helped! :D",
+                    "I'm happy to have helped! :D",
+                    "You're welcome!",
+                    "You're welcome! :D",
+                    "You're welcome! ^_^",
+                    "You're welcome! :-)"
+                ]
+            }
+        },
+        {
             'messages': ['whats a hackathon', 'what is a hackathon', 'what are hackathons', 'hackathons', 'why is it called a hackathon', 'why are they called hackathons', 'why is it called hackathon', 'why is it named hackathon', 'why are they named hackathons', 'define hackathons', 'define hackathon'],
             'response': {
                 'text': [
@@ -99,7 +112,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['how were you made', 'are you open source', 'are you opensource', 'can i see your code', 'are you on github', 'who made you', 'what made you', 'were you born', 'where do you come from', 'how old are you', 'where were you born', 'who created you', 'how old are you', 'whats your age', 'what is your age', 'do you exist', 'what are you made of', 'are you alive', 'are you real', 'do you breathe', 'are you human', 'are you a robot', 'are you a machine', 'are you a computer', 'is there a person behind this', 'where are you from', 'what country are you from', 'where do you live', 'do you live'],
+            'messages': ['how were you made', 'how do you work', 'are you open source', 'are you opensource', 'can i see your code', 'are you on github', 'who made you', 'what made you', 'were you born', 'where do you come from', 'how old are you', 'where were you born', 'who created you', 'how old are you', 'whats your age', 'what is your age', 'do you exist', 'what are you made of', 'are you alive', 'are you real', 'do you breathe', 'are you human', 'are you a robot', 'are you a machine', 'are you a computer', 'is there a person behind this', 'where are you from', 'what country are you from', 'where do you live', 'do you live'],
             'response': {
                 'text': [
                     'I was created by our wonderful dev team! If you want to see my code, check out https://github.com/hacksoc-manchester/bot.',
@@ -159,7 +172,7 @@ module.exports = {
                     'I share your enthusiasm! :D'
                 ],
                 'replies': [
-                    "What's HackSoc doing?"
+                    "Any upcoming events?"
                 ]
             }
         },
@@ -213,7 +226,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['what is hacksoc', 'what is hacksoc about', 'whats hacksoc', 'whats hacksoc about', 'who are you', 'what are you', 'what have you been up to', 'what are you up to', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
+            'messages': ['what is hacksoc', 'what is hacksoc about', 'whats hacksoc', 'whats hacksoc about', 'where is hacksoc', 'wheres hacksoc', 'who are you', 'what are you', 'what have you been up to', 'what are you up to', 'what do you do', 'why hacksoc', 'tell me something cool', 'say something', 'impress me', 'are you a secret society', 'are you a society', 'are you a club', 'what kind of society are you', 'are you a tech society'],
             'response': {
                 'text': [
                     "We're a student-led tech society that's based in Manchester. We'd be very happy if you dropped by at our events! :-)"
