@@ -72,7 +72,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['2+2', '2 + 2', '2+2=', '2 + 2 =', 'what is 2+2', 'whats 2+2', 'what is 2 + 2', 'whats 2 + 2', 'whats two plus two', 'what is two plus two', 'what does two plus two equal to', '2 plus 2', 'two plus two'],
+            'messages': ['2+2', '2 + 2', '2+2=', '2 + 2 =', '2 + 2 = ', 'what is 2+2', 'whats 2+2', 'what is 2 + 2', 'whats 2 + 2', 'whats two plus two', 'what is two plus two', 'what does two plus two equal to', 'what is the result of two plus two', 'whats the result of two plus two', 'what is the result of 2 + 2', 'whats the result of 2 + 2', '2 plus 2', 'two plus two'],
             'response': {
                 'text': [
                     'Freedom is the freedom to say that two plus two make four.',
