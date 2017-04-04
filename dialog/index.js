@@ -64,6 +64,33 @@ module.exports = {
             }
         },
         {
+            'messages': ['42', 'what is 42'],
+            'response': {
+                'text': [
+                    '42 is the natural number that succeeds 41 and precedes 43.'
+                ]
+            }
+        },
+        {
+            'messages': ['2+2', '2 + 2', '2+2=', '2 + 2 =', 'what is 2+2', 'whats 2+2', 'what is 2 + 2', 'whats 2 + 2', 'whats two plus two', 'what is two plus two', 'what does two plus two equal to', '2 plus 2', 'two plus two'],
+            'response': {
+                'text': [
+                    'Freedom is the freedom to say that two plus two make four.',
+                    'Four, Winston.',
+                    "Four, O'Brien.",
+                    'Two and two always makes up four.'
+                ]
+            }
+        },
+        {
+            'messages': ['say my name'],
+            'response': {
+                'text': [
+                    "You're Heisenberg."
+                ]
+            }
+        },
+        {
             'messages': ['whats a hackathon', 'what is a hackathon', 'what are hackathons', 'hackathons', 'why is it called a hackathon', 'why are they called hackathons', 'why is it called hackathon', 'why is it named hackathon', 'why are they named hackathons', 'define hackathons', 'define hackathon'],
             'response': {
                 'text': [
@@ -72,14 +99,15 @@ module.exports = {
             }
         },
         {
-            'messages': ['how were you made', 'are you open source', 'are you opensource', 'can i see your code', 'are you on github', 'who made you', 'were you born', 'where do you come from', 'how old are you', 'where were you born', 'who created you', 'how old are you', 'whats your age', 'what is your age'],
+            'messages': ['how were you made', 'are you open source', 'are you opensource', 'can i see your code', 'are you on github', 'who made you', 'what made you', 'were you born', 'where do you come from', 'how old are you', 'where were you born', 'who created you', 'how old are you', 'whats your age', 'what is your age', 'do you exist', 'what are you made of', 'are you alive', 'are you real', 'do you breathe', 'are you human', 'are you a robot', 'are you a machine', 'are you a computer', 'is there a person behind this', 'where are you from', 'what country are you from', 'where do you live', 'do you live'],
             'response': {
                 'text': [
                     'I was created by our wonderful dev team! If you want to see my code, check out https://github.com/hacksoc-manchester/bot.',
-                    'I have no beginning. I have no end.'
+                    'I have no beginning. I have no end.',
+                    'I exist in the realm of Mathematics.'
                 ],
                 'replies': [
-                    "What's a 'dev team'?"
+                    "Dev team"
                 ]
             }
         },
@@ -360,7 +388,7 @@ module.exports = {
             'messages': ['sure', 'yes', 'okay', 'cool do you know any jokes', 'do you know any jokes', 'can you tell me a joke', 'okay can you tell me a joke', 'haha', 'ha ha', 'hehe', 'hihi', 'hohoho', 'lol', 'i lold', 'im lolling', 'loled', 'lolling', 'lool', 'loool', 'rofl', 'lel', 'xD', ':))', 'kek', 'top kek', 'bur', 'lesin', 'joke', 'say something funny', 'make me laugh', 'make me lol', 'you laugh you lose', 'tell me a joke', 'say a joke', 'know any jokes', 'know any joke', 'another joke', 'another one', 'more pls', 'more please'],
             'response': {
                 'text': [
-                    "Q: Why do programmers mix up Halloween and Christmas?\u000A A: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
+                    "Q: Why do programmers mix up Halloween and Christmas?\u000AA: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
                     '- "Knock Knock!" \u000A- "Who is it?" \u000A- "Please don\'t turn off your PC. Installing update 1 of 9001..." ',
                     '- "Knock Knock!" \u000A- "Who is it?" \u000A[Very short pause] \u000ASegmentation fault',
                     '- "Knock Knock!" \u000A- "Is it Linux?" \u000A- "I\'d just like to interject for a moment. What you\'re referring to as Linux, is in fact, GNU/Linux, or as I\'ve recently taken to calling it, GNU plus Linux."',                    
