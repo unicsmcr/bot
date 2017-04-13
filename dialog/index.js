@@ -403,9 +403,15 @@ module.exports = {
             'response': {
                 'text': [
                     "Q: Why do programmers mix up Halloween and Christmas?\u000AA: Because Oct 31 equals Dec 25! (Bet you've never heard this one before!)",
-                    '- "Knock Knock!" \u000A- "Who is it?" \u000A- "Please don\'t turn off your PC. Installing update 1 of 9001..." ',
-                    '- "Knock Knock!" \u000A- "Who is it?" \u000A[Very short pause] \u000ASegmentation fault',
-                    '- "Knock Knock!" \u000A- "Is it Linux?" \u000A- "I\'d just like to interject for a moment. What you\'re referring to as Linux, is in fact, GNU/Linux, or as I\'ve recently taken to calling it, GNU plus Linux."',
+                    '- "Knock Knock!"\u000A- "Race condition."\u000A- "Who is it?"',
+                    '- "Knock Knock!"\u000A- "Who is it?"\u000A- "Please don\'t turn off your PC. Installing update 1 of 9001..." ',
+                    '- "Knock Knock!"\u000A- "Who is it?"\u000A[Very short pause] \u000ASegmentation fault',
+                    '- "Knock Knock!"\u000A- "Is it Linux?"\u000A- "I\'d just like to interject for a moment. What you\'re referring to as Linux, is in fact, GNU/Linux, or as I\'ve recently taken to calling it, GNU plus Linux."',
+                    'The speed of light in a vacuum used to be about 35 mph. Then Jeff Dean spent a weekend optimizing physics.',
+                    'When Graham Bell invented the telephone, he saw a missed call from Jeff Dean.',
+                    'Jeff Dean builds his code before committing it, but only to check for compiler and linker bugs.',
+                    'I would tell you a UDP joke, but you might not get it.',
+                    'Q: Why do number jokes not work in base-8?\u000AA: Because 7 10 11!'
                 ]
             }
         },
@@ -414,7 +420,8 @@ module.exports = {
             'response': {
                 'text': [
                     'Looks like a great day for hacking! :D',
-                    'Looks like a great day for hacking! ^_^'
+                    'Looks like a great day for hacking! ^_^',
+                    'Looks like a fine day for hacking! :D'
                 ]
             }
         }
