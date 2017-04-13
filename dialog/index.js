@@ -252,10 +252,12 @@ module.exports = {
             }
         },
         {
-            'messages': ['okay but whats hacksoc doing', 'cool but whats hacksoc doing', 'whats hacksoc doing', 'what is hacksoc doing', 'i meant the society', 'i mean the society', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'upcoming events', 'events', 'any events', 'are there any events', 'are there any upcoming events', 'future events', 'any future events', 'are there any future events', 'will there be any new events', 'any new events', 'are there any new events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
+            'messages': ['when is the next hackathon', 'whens the next hackathon', 'when is the next event', 'whens the next event', 'next hackathon', 'next event', 'okay but whats hacksoc doing', 'cool but whats hacksoc doing', 'whats hacksoc doing', 'what is hacksoc doing', 'i meant the society', 'i mean the society', 'i mean whats hacksoc doing', 'what about the society', 'any upcoming events', 'any upcoming event', 'upcoming events', 'upcoming event', 'events', 'event', 'any events', 'any event', 'are there any events', 'is there any event', 'are there any upcoming events', 'is there any upcoming event', 'future events', 'future event', 'any future events', 'any future event', 'are there any future events', 'is there any future event', 'will there be any new events', 'any new events', 'are there any new events', 'tell me about events', 'tell me about the events', 'what events do you do', 'do you do events', 'any cool events', 'anything interesting', 'anything cool', 'any tech events', 'any cs events', 'any hardware events', 'hardware events'],
             'response': {
                 'text': [
-                    "We're currently working on more events for you to enjoy. Please check back in the near future! :-)"
+                    "We're currently working on more events for you to enjoy. Please check back in the near future! :-)",
+                    "We're working hard to bring you new events! Please check back soon. :-)",
+                    "We're trying to come up with an awesome event! Please check back soon. :-)"
                 ],
                 'replies': [
                     "Who's in HackSoc?",
@@ -313,7 +315,7 @@ module.exports = {
             }
         },
         {
-            'messages': ['event organizers', 'event', 'whats an event team', 'do you have an event team', 'whos organizing events', 'who is organizing events', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who are the event directors', 'who are the event organizers', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
+            'messages': ['event organizers', 'whats an event team', 'do you have an event team', 'whos organizing events', 'who is organizing events', 'whos in the event team', 'who is in the event team', 'who is event officer', 'who is the event officer', 'whos the event officer', 'who are the event team members', 'who are the event directors', 'who are the event organizers', 'who is in event', 'whos in event', 'who is in event team', 'whos in event team', 'tell me about the event team', 'tell me about event team', 'event team', 'what does the event team do'],
             'response': {
                 'text': [
                     "The event team frequently organizes tech events, including workshops and monthly talks given by industry experts.\u000A\u000AOur current event directors are Miruna Pislar and Robert Ihnatisin."
