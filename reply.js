@@ -89,7 +89,8 @@ function callSendAPI(messageData) {
     }, function(error, response, body) {
         if (error || response.statusCode != 200) {
             debug.info.errors.sendAPIErrorCount++;
-            console.error('Failed calling the send API:', response.statusCode, response.statusMessage, body.error);
+            debug.info.errorMessage = `Failed calling the send API: ${response.statusCode} ${response.statusMessage} ${JSON.stringify(body.error)}`;
+            console.error(debug.info.errorMessage);
         }
     });
 }
